@@ -5,9 +5,9 @@ import React, { Component } from 'react';
 import './style.css';
 
 
-class HelloWorld extends Component {
+class MarketingButton extends Component {
 
-  static slug = 'myex_hello_world';
+  static slug = 'myex_marketing_button';
 
   render() {
     const Content = this.props.content;
@@ -20,4 +20,4 @@ class HelloWorld extends Component {
   }
 }
 
-export default HelloWorld;
+export default MarketingButton;

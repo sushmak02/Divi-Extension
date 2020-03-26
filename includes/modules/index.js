@@ -1,3 +1,3 @@
-import HelloWorld from './HelloWorld/HelloWorld';
+import MarketingButton from './MarketingButton/MarketingButton';
 
-export default [HelloWorld];
+export default [MarketingButton];

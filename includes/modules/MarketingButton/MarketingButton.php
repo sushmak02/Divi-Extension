@@ -1,8 +1,8 @@
 <?php
 
-class MYEX_HelloWorld extends ET_Builder_Module {
+class MYEX_MarketingButton extends ET_Builder_Module {
 
-	public $slug       = 'myex_hello_world';
+	public $slug       = 'myex_marketing_button';
 	public $vb_support = 'on';
 
 	protected $module_credits = array(
@@ -12,7 +12,7 @@ class MYEX_HelloWorld extends ET_Builder_Module {
 	);
 
 	public function init() {
-		$this->name = esc_html__( 'Hello World', 'myex-my-extension' );
+		$this->name = esc_html__( 'Marketing Button', 'myex-my-extension' );
 	}
 
 	public function get_fields() {
@@ -32,4 +32,4 @@ class MYEX_HelloWorld extends ET_Builder_Module {
 	}
 }
 
-new MYEX_HelloWorld;
+new MYEX_MarketingButton;
