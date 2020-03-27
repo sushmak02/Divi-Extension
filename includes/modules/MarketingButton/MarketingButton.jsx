@@ -13,9 +13,13 @@ class MarketingButton extends Component {
     const Content = this.props.content;
 
     return (
-      <h1>
-        <Content/>
-      </h1>
+      <div class="uad-marketing-button">
+      <div class="uad-mbutton-title">
+        <h1><Title/></h1>
+      </div>
+      <div class="uad-mbutton-content"><Content/>
+      </div>
+      </div>
     );
   }
 }

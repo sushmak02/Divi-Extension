@@ -17,6 +17,11 @@ class MYEX_MarketingButton extends ET_Builder_Module {
 
 	public function get_fields() {
 		return array(
+			'title' => array(
+				'label'           => esc_html__( 'Title', 'myex-my-extension' ),
+				'type'            => 'text',
+				'toggle_slug'     => 'main_content',
+			),
 			'content' => array(
 				'label'           => esc_html__( 'Content', 'myex-my-extension' ),
 				'type'            => 'tiny_mce',
@@ -28,7 +33,7 @@ class MYEX_MarketingButton extends ET_Builder_Module {
 	}
 
 	public function render( $attrs, $content = null, $render_slug ) {
-		return sprintf( '<h1>%1$s</h1>', $this->props['content'] );
+		return sprintf( '<div class="uad-marketing-button"><div class="uad-mbutton-title"><h1>%1$s</h1></div><div class="uad-mbutton-content">%2$s</div></div>', $this->props['title'], $this->props['content'] );
 	}
 }
 
