@@ -1,3 +1,5 @@
 import MarketingButton from './MarketingButton/MarketingButton';
 
-export default [MarketingButton];
+export default [
+    MarketingButton
+];
